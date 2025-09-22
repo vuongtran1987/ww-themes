@@ -1,0 +1,246 @@
+# Copyright (C) 2025 Wisdom Waypoints
+# This file is distributed under the same license as the Wisdom Waypoints package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Wisdom Waypoints 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/wisdom-waypoints\n"
+"POT-Creation-Date: 2025-01-12 12:00:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2025-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: 404.php:10
+msgid "Oops! That page can't be found."
+msgstr ""
+
+#: 404.php:15
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr ""
+
+#: 404.php:22
+msgid "Recent Posts"
+msgstr ""
+
+#: 404.php:38
+msgid "Categories"
+msgstr ""
+
+#: 404.php:54
+msgid "Back to Home"
+msgstr ""
+
+#: archive.php:9
+msgid "Nothing Found"
+msgstr ""
+
+#: archive.php:12
+msgid "It seems we can't find what you're looking for. Perhaps searching can help."
+msgstr ""
+
+#: comments.php:15
+msgctxt "comments title"
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: comments.php:21
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:38
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:8
+msgid "Inner work for outer chaos. Wisdom for the modern world."
+msgstr ""
+
+#: footer.php:25
+msgid "Copyright © 2025 Wisdom Waypoints, a 501(c)(3) non-profit"
+msgstr ""
+
+#: functions.php:25
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:26
+msgid "Mobile Menu"
+msgstr ""
+
+#: functions.php:27
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:45
+msgid "Homepage Cards"
+msgstr ""
+
+#: functions.php:52
+msgid "Getting Started Text"
+msgstr ""
+
+#: functions.php:59
+msgid "Getting Started Link"
+msgstr ""
+
+#: functions.php:68
+msgid "Latest News Text"
+msgstr ""
+
+#: functions.php:75
+msgid "Latest News Link"
+msgstr ""
+
+#: functions.php:84
+msgid "Events Text"
+msgstr ""
+
+#: functions.php:91
+msgid "Events Link"
+msgstr ""
+
+#: functions.php:100
+msgid "Courses Text"
+msgstr ""
+
+#: functions.php:107
+msgid "Courses Link"
+msgstr ""
+
+#: functions.php:115
+msgid "Footer Settings"
+msgstr ""
+
+#: functions.php:121
+msgid "Footer Tagline"
+msgstr ""
+
+#: functions.php:129
+msgid "Footer Copyright"
+msgstr ""
+
+#: header.php:65
+msgid "My Account"
+msgstr ""
+
+#: index.php:15
+msgid "GETTING STARTED"
+msgstr ""
+
+#: index.php:25
+msgid "LOREM IPSUM HERE"
+msgstr ""
+
+#: index.php:36
+msgid "LATEST NEWS"
+msgstr ""
+
+#: index.php:54
+msgid "EVENTS"
+msgstr ""
+
+#: index.php:72
+msgid "COURSES"
+msgstr ""
+
+#: search.php:9
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php:32
+msgid "Nothing Found"
+msgstr ""
+
+#: search.php:35
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: searchform.php:3
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:9
+msgctxt "placeholder"
+msgid "Search..."
+msgstr ""
+
+#: searchform.php:17
+msgid "Search"
+msgstr ""
+
+#: sidebar.php:10
+msgid "Search"
+msgstr ""
+
+#: sidebar.php:16
+msgid "Recent Posts"
+msgstr ""
+
+#: sidebar.php:34
+msgid "Categories"
+msgstr ""
+
+#: sidebar.php:50
+msgid "Archives"
+msgstr ""
+
+#: sidebar.php:62
+msgid "Tags"
+msgstr ""
+
+#: single.php:13
+msgid "by"
+msgstr ""
+
+#: single.php:20
+msgid "in"
+msgstr ""
+
+#: single.php:35
+msgid "Tags:"
+msgstr ""
+
+#: single.php:41
+msgid "Pages:"
+msgstr ""
+
+#: single.php:48
+msgid "Previous:"
+msgstr ""
+
+#: single.php:49
+msgid "Next:"
+msgstr ""
+
+#: template-parts/content.php:25
+msgid "by"
+msgstr ""
+
+#: template-parts/content.php:32
+msgid "in"
+msgstr ""
+
+#: template-parts/content.php:65
+msgid "Read More"
+msgstr ""
+
+#: template-parts/content-none.php:4
+msgid "Nothing here"
+msgstr ""
+
+#: template-parts/content-none.php:10
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:21
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:25
+msgid "It seems we can't find what you're looking for. Perhaps searching can help."
+msgstr ""
