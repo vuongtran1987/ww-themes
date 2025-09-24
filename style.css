@@ -570,6 +570,18 @@ body {
         display: none;
     }
     
+    .hero-banner {
+        height: 300px !important;
+    }
+    
+    .hero-banner h1 {
+        font-size: 2rem !important;
+    }
+    
+    .hero-banner p {
+        font-size: 1.125rem !important;
+    }
+    
     .hero-section {
         height: 250px;
     }

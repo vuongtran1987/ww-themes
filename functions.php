@@ -218,6 +218,211 @@ function wisdom_waypoints_widgets_init() {
 }
 add_action('widgets_init', 'wisdom_waypoints_widgets_init');
 
+// Add ACF support for custom fields
+function wisdom_waypoints_acf_init() {
+    // Check if ACF is active
+    if (function_exists('acf_add_local_field_group')) {
+        
+        // Home Page Template Fields
+        acf_add_local_field_group(array(
+            'key' => 'group_home_page_fields',
+            'title' => 'Home Page Settings',
+            'fields' => array(
+                // Banner Settings
+                array(
+                    'key' => 'field_banner_type',
+                    'label' => 'Banner Type',
+                    'name' => 'banner_type',
+                    'type' => 'radio',
+                    'choices' => array(
+                        'image' => 'Featured Image',
+                        'video' => 'Video'
+                    ),
+                    'default_value' => 'image',
+                    'layout' => 'horizontal',
+                ),
+                array(
+                    'key' => 'field_banner_video',
+                    'label' => 'Banner Video',
+                    'name' => 'banner_video',
+                    'type' => 'file',
+                    'return_format' => 'array',
+                    'mime_types' => 'mp4,webm,ogg',
+                    'conditional_logic' => array(
+                        array(
+                            array(
+                                'field' => 'field_banner_type',
+                                'operator' => '==',
+                                'value' => 'video',
+                            ),
+                        ),
+                    ),
+                ),
+                array(
+                    'key' => 'field_banner_height',
+                    'label' => 'Banner Height (px)',
+                    'name' => 'banner_height',
+                    'type' => 'number',
+                    'default_value' => 500,
+                    'min' => 300,
+                    'max' => 800,
+                ),
+                array(
+                    'key' => 'field_banner_title',
+                    'label' => 'Banner Title',
+                    'name' => 'banner_title',
+                    'type' => 'text',
+                ),
+                array(
+                    'key' => 'field_banner_subtitle',
+                    'label' => 'Banner Subtitle',
+                    'name' => 'banner_subtitle',
+                    'type' => 'textarea',
+                    'rows' => 3,
+                ),
+                
+                // Box 1 Fields
+                array(
+                    'key' => 'field_box1_title',
+                    'label' => 'Box 1 Title',
+                    'name' => 'box1_title',
+                    'type' => 'text',
+                    'default_value' => 'Getting Started',
+                ),
+                array(
+                    'key' => 'field_box1_content',
+                    'label' => 'Box 1 Content',
+                    'name' => 'box1_content',
+                    'type' => 'wysiwyg',
+                    'toolbar' => 'basic',
+                    'media_upload' => 0,
+                ),
+                array(
+                    'key' => 'field_box1_link_text',
+                    'label' => 'Box 1 Link Text',
+                    'name' => 'box1_link_text',
+                    'type' => 'text',
+                ),
+                array(
+                    'key' => 'field_box1_link_url',
+                    'label' => 'Box 1 Link URL',
+                    'name' => 'box1_link_url',
+                    'type' => 'url',
+                ),
+                
+                // Box 2 Fields
+                array(
+                    'key' => 'field_box2_title',
+                    'label' => 'Box 2 Title',
+                    'name' => 'box2_title',
+                    'type' => 'text',
+                    'default_value' => 'Latest News',
+                ),
+                array(
+                    'key' => 'field_box2_content',
+                    'label' => 'Box 2 Content',
+                    'name' => 'box2_content',
+                    'type' => 'wysiwyg',
+                    'toolbar' => 'basic',
+                    'media_upload' => 0,
+                ),
+                array(
+                    'key' => 'field_box2_link_text',
+                    'label' => 'Box 2 Link Text',
+                    'name' => 'box2_link_text',
+                    'type' => 'text',
+                ),
+                array(
+                    'key' => 'field_box2_link_url',
+                    'label' => 'Box 2 Link URL',
+                    'name' => 'box2_link_url',
+                    'type' => 'url',
+                ),
+                
+                // Box 3 Fields
+                array(
+                    'key' => 'field_box3_title',
+                    'label' => 'Box 3 Title',
+                    'name' => 'box3_title',
+                    'type' => 'text',
+                    'default_value' => 'Events',
+                ),
+                array(
+                    'key' => 'field_box3_content',
+                    'label' => 'Box 3 Content',
+                    'name' => 'box3_content',
+                    'type' => 'wysiwyg',
+                    'toolbar' => 'basic',
+                    'media_upload' => 0,
+                ),
+                array(
+                    'key' => 'field_box3_link_text',
+                    'label' => 'Box 3 Link Text',
+                    'name' => 'box3_link_text',
+                    'type' => 'text',
+                ),
+                array(
+                    'key' => 'field_box3_link_url',
+                    'label' => 'Box 3 Link URL',
+                    'name' => 'box3_link_url',
+                    'type' => 'url',
+                ),
+                
+                // Box 4 Fields
+                array(
+                    'key' => 'field_box4_title',
+                    'label' => 'Box 4 Title',
+                    'name' => 'box4_title',
+                    'type' => 'text',
+                    'default_value' => 'Courses',
+                ),
+                array(
+                    'key' => 'field_box4_content',
+                    'label' => 'Box 4 Content',
+                    'name' => 'box4_content',
+                    'type' => 'wysiwyg',
+                    'toolbar' => 'basic',
+                    'media_upload' => 0,
+                ),
+                array(
+                    'key' => 'field_box4_link_text',
+                    'label' => 'Box 4 Link Text',
+                    'name' => 'box4_link_text',
+                    'type' => 'text',
+                ),
+                array(
+                    'key' => 'field_box4_link_url',
+                    'label' => 'Box 4 Link URL',
+                    'name' => 'box4_link_url',
+                    'type' => 'url',
+                ),
+            ),
+            'location' => array(
+                array(
+                    array(
+                        'param' => 'page_template',
+                        'operator' => '==',
+                        'value' => 'page-home.php',
+                    ),
+                ),
+            ),
+            'menu_order' => 0,
+            'position' => 'normal',
+            'style' => 'default',
+            'label_placement' => 'top',
+            'instruction_placement' => 'label',
+        ));
+    }
+}
+add_action('acf/init', 'wisdom_waypoints_acf_init');
+
+// Fallback functions if ACF is not installed
+if (!function_exists('get_field')) {
+    function get_field($selector, $post_id = false, $format_value = true) {
+        return get_post_meta($post_id ?: get_the_ID(), $selector, true);
+    }
+}
+
 // Custom comment callback
 function wisdom_waypoints_comment($comment, $args, $depth) {
     if ('div' === $args['style']) {
